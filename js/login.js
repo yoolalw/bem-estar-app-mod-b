@@ -2,6 +2,7 @@ console.log('a')
 const user = document.getElementById('username')
 const pass = document.getElementById('password')
 const subm = document.getElementById('submit')
+const msg = document.getElementById('msg')
 
 subm.addEventListener('click', (e) => {
     e.preventDefault()
@@ -25,6 +26,16 @@ subm.addEventListener('click', (e) => {
 
                 localStorage.setItem('token', data.token)
                 console.log(localStorage.getItem('token'))
+
+                msg.textContent = "Sucesso ao entrar!"
+
+                setTimeout(() => {
+                    window.location.href = "home.html"
+                }, 1000);
+                
+            }
+            else { 
+                msg.textContent = "Ocorreu um erro ao tentar realizar o login."
             }
         } catch (e) {
             console.log(e)
