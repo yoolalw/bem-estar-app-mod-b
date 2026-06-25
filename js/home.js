@@ -6,7 +6,7 @@ async function ativs() {
     try {
         const response = await fetch(urlToFetch, {
             headers: {
-                "Authorization": "Bearer 1ca3ad04c72e250a0f4c65216d6cb13a"
+                "Authorization": `Bearer ${token}`
             }
         })
         if (response.ok) {
@@ -22,3 +22,11 @@ async function ativs() {
         console.log(e)
     }
 } ativs()
+
+function sobre(){
+    window.location.href = "sobre.html"
+}
+
+function desafios(){ 
+    window.location.href = "desafios.html"
+}
