@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bem estar</title>
+</head>
+
+<body class="bg-[#f7f7f7]">
+    <button id="sobre" type="button"
+        class="h-[60px] hover:bg-[#ededed] cursor-pointer text-[#333] fixed font-bold w-[200px] ml-40 bg-[#f7f7f7] mt-10 rounded-full">Sobre</button>
+    </div>
+
+    <div class=" align-middle ml-[-1400px] items-center m-auto flex flex-col">
+        <div class="bg-[#aed6f1] h-screen w-[500px] flex justify-center align-middle items-center m-auto">
+            <div
+                class="h-[500px] w-[400px] bg-[#f7f7f7] rounded-lg shadow-lg justify-center align-middle items-center flex flex-col">
+                <h1 class="text-[30px] text-[#333] ">Desafios do dia</h1>
+                <button id="verDesafio"
+                    class="h-[100px] w-[200px] bg-[#ededed] rounded-xl shadow-lg mt-4 text-[20px] cursor-pointer hover:bg-[#aed6f1] shadow-xl border-2 border-[#aed6f1] text-[#333]">Ver
+                    desafio do dia</button>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[-900px]">
+        <div class="justify-center z-5 align-middle items-center m-auto flex flex-col mt-8">
+            <img src="img/logomarca.png" class="h-60 z-5 flex">
+
+            <div
+                class="justify-center items-center align-middle m-auto flex  border-2 border-[#f7f7f7] bg-[#aed6f1] h-[100px] w-[500px] mt-2 rounded-full border-[#ededed]">
+                <h1 class="text-[30px] font-bold text-[#f7f7f7]">PROGRESSO</h1>
+            </div>
+
+            <p>Desafio 2 de 30</p>
+            <div class="cards ml-130  mt-60 h-[200px] w-[1100px] items-center  align-middle flex justify-center">
+                <div
+                    class="concluir h-full gap-3 rounded-lg shadow-xl bg-[#a2ded0] w-[300px] justify-center border-2 border-[#f7f7f7] align-middle items-center flex flex-col m-auto">
+                    <h2 class="italic font-bold text-[#333]">Deseja concluir? </h2>
+                    <button id="concluir" type="button"
+                        class="h-[60px] hover:bg-[#ededed] cursor-pointer text-[#333] font-bold w-[200px] bg-[#f7f7f7] rounded-full">Concluir
+                        desafio</button>
+                </div>
+                <div
+                    class="proximo h-full rounded-lg shadow-xl bg-[#a2ded0] w-[300px] justify-center align-middle border-2 border-[#f7f7f7] items-center flex flex-col m-auto">
+
+                    <h2 class="italic font-bold text-[#333]">Deseja ver seu proximo desafio? </h2>
+                    <button id="proximos" type="button"
+                        class="h-[60px] hover:bg-[#ededed] cursor-pointer text-[#333] font-bold w-[200px] bg-[#f7f7f7] rounded-full">Proximo
+                        desafio</button>
+                </div>
+                <div
+                    class="ver h-full rounded-lg shadow-xl bg-[#a2ded0] w-[300px] justify-center align-middle items-center flex flex-col m-auto border-2 border-[#f7f7f7]">
+
+                    <h2 class="italic font-bold text-[#333]">Deseja ver seus antigos desafios? </h2>
+                    <button id="ver" type="button"
+                        class="h-[60px] hover:bg-[#ededed] cursor-pointer text-[#333] font-bold w-[200px] bg-[#f7f7f7] rounded-full">Desafios
+                        concluidos</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+
+</html>
